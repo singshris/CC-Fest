@@ -62,16 +62,16 @@ h2 {
   font-size: var(--font-size-heading-1);
   line-height: 88%;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0.01em;
   margin-bottom: 1rem;
 }
 
 h3 {
   font-size: var(--font-size-heading-2);
-  line-height: 110%;
+  line-height: 100%;
   font-weight: 400;
   padding-top: 0px;
-  margin-top: 0px;
+  margin-top: 1em;
 }
 
 h4 {
@@ -87,9 +87,13 @@ h5 {
   font-optical-sizing: 16;
 }
 
+@font-face {
+  font-family: Apfel-Mittel;
+  src: url(web/ApfelGrotezk-Mittel.woff2);
+}
 
-.dm-sans-medium {
-  font-family: "DM Sans", sans-serif;
+.apfel-medium {
+  font-family: Apfel-Mittel;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -101,7 +105,7 @@ h5 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  font-family: "DM Sans", sans-serif;
+  font-family: Apfel-Mittel;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 600;
